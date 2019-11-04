@@ -18,7 +18,7 @@ public class Client {
 		perro.accept(visitor);
 		gato.accept(visitor);
 		caballo.accept(visitor);
-
+ 
 	}
 
 }

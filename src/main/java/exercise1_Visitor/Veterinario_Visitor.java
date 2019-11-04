@@ -8,14 +8,15 @@ public class Veterinario_Visitor implements IVisitor {
 	
 	@Override
 	public String visit(Perro perro) {
+		System.out.println("------------------------------------------------");
 		if (perro.getEnfermedades() == ListaEnfermedades.Enfermedad1) {
 			date = new Date();
-			System.out.println("El perro "+perro.getNombre()+" con "+perro.getEdad()+" años tiene la " + perro.getEnfermedades());
+			System.out.println("El perro "+perro.getNombre()+" con "+perro.getEdad()+" aÃ±os tiene la " + perro.getEnfermedades());
 			res = "Se da la cura 1 en fecha y hora: " + date ;
 			System.out.println(res);
 		} else if (perro.getEnfermedades() == ListaEnfermedades.Enfermedad2){
 			date = new Date();
-			System.out.println("El perro "+perro.getNombre()+" con "+perro.getEdad()+" años tiene la " + perro.getEnfermedades());
+			System.out.println("El perro "+perro.getNombre()+" con "+perro.getEdad()+" aÃ±os tiene la " + perro.getEnfermedades());
 			res = "Se da la cura 2 en fecha y hora: " + date ;
 			System.out.println(res);
 		} 
@@ -24,14 +25,15 @@ public class Veterinario_Visitor implements IVisitor {
 
 	@Override
 	public String visit(Gato gato) {
+		System.out.println("------------------------------------------------");
 		if (gato.getEnfermedad() == ListaEnfermedades.Enfermedad1) {
 			date = new Date();
-			System.out.println("El gato "+gato.getNombre()+" con "+gato.getEdad()+" años tiene la " + gato.getEnfermedad());
+			System.out.println("El gato "+gato.getNombre()+" con "+gato.getEdad()+" aÃ±os tiene la " + gato.getEnfermedad());
 			res = "Se da la cura 1 en fecha y hora: " + date ;
 			System.out.println(res);
 		} else if (gato.getEnfermedad() == ListaEnfermedades.Enfermedad2){
 			date = new Date();
-			System.out.println("El gato "+gato.getNombre()+" con "+gato.getEdad()+" años tiene la " + gato.getEnfermedad());
+			System.out.println("El gato "+gato.getNombre()+" con "+gato.getEdad()+" aÃ±os tiene la " + gato.getEnfermedad());
 			res = "Se da la cura 2 en fecha y hora: " + date ;
 			System.out.println(res);
 		} 
@@ -40,14 +42,15 @@ public class Veterinario_Visitor implements IVisitor {
 
 	@Override
 	public String visit(Caballo caballo) {
+		System.out.println("------------------------------------------------");
 		if (caballo.getEnfermedad() == ListaEnfermedades.Enfermedad1) {
 			date = new Date();
-			System.out.println("El caballo "+caballo.getNombre()+" con "+caballo.getEdad()+" años tiene la " + caballo.getEnfermedad());
+			System.out.println("El caballo "+caballo.getNombre()+" con "+caballo.getEdad()+" aÃ±os tiene la " + caballo.getEnfermedad());
 			res = "Se da la cura 1 en fecha y hora: " + date ;
 			System.out.println(res);
 		} else if (caballo.getEnfermedad() == ListaEnfermedades.Enfermedad2){
 			date = new Date();
-			System.out.println("El caballo "+caballo.getNombre()+" con "+caballo.getEdad()+" años tiene la " + caballo.getEnfermedad());
+			System.out.println("El caballo "+caballo.getNombre()+" con "+caballo.getEdad()+" aÃ±os tiene la " + caballo.getEnfermedad());
 			res = "Se da la cura 2 en fecha y hora: " + date ;
 			System.out.println(res);
 		} 
